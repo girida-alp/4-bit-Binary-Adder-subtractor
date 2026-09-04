@@ -1,0 +1,51 @@
+(session freerouting
+  (base_design freerouting)
+  (placement
+    (resolution um 10)
+    (component "Package_DIP:DIP-14_W7.62mm"
+      (place U3 1673800 -715550 front 0)
+      (place U1 1150000 -715550 front 0)
+      (place U2 1393650 -715550 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "10.0.3")
+    )
+    (library_out 
+      (padstack "Via[0-1]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "Net-(U2-Pad3)"
+        (wire
+          (path B.Cu 10000
+            1393650 -766350
+            1459512 -700488
+            1633338 -700488
+            1673800 -740950
+          )
+        )
+      )
+      (net "/X1"
+        (wire
+          (path B.Cu 10000
+            1150000 -791750
+            1150000 -766350
+          )
+        )
+      )
+    )
+  )
+)
